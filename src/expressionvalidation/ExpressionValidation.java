@@ -30,6 +30,15 @@ public class ExpressionValidation {
         //Pull the char out of the user input
         
         Stack charStack = new Stack();
+        /*A stack was used in this project as it is suitable for this 
+        circumstance: only adding and removing items, then comparing how many
+        there are.
+        
+        Of course, you could just have even something as simple as two integers
+        which counted the number of instances, but checking the values and
+        comparing the two would be a lot harder than using a stack ( same for
+        arrays too; it would be possible, it would just take a lot more logic,
+        time and effort)*/
         
         for (int i = 0; i < expression.length(); i++) {
             
